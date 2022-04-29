@@ -3,7 +3,7 @@ import { PublicKey } from '@solana/web3.js'
 import idl from '../config/idl.json'
 import { useMemo } from 'react'
 import useProvider from './useProvider'
-import type { EvotingSystem } from '../../target/types/evoting_system'
+import { EvotingSystem } from 'types/program'
 
 const PROGRAM_KEY = new PublicKey(process.env.NEXT_PUBLIC_PROGRAM_ID as string)
 
